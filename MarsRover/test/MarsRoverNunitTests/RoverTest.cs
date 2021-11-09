@@ -1,3 +1,4 @@
+using System;
 using NUnit.Framework;
 
 namespace MarsRoverNUnitTests
@@ -12,7 +13,20 @@ namespace MarsRoverNUnitTests
         [Test]
         public void StartHere()
         {
-            Assert.Pass();
+            var sut = new Rover();
+
+            var result = sut.CurrentDirection();
+
+            Assert.That(result, Is.EqualTo("0 0 N"));
         }
+    }
+    
+    public class Rover
+    {
+        public string CurrentDirection()
+        {
+            throw new NotImplementedException();
+        }
+        
     }
 }
