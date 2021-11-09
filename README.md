@@ -19,7 +19,7 @@ Rules:
       - Or if the Rover is facing west from (x, y) then M is changing to (x-1, y).
 5. The rover receives a string containing the synchronous commands e.g. RMMLM and the rover returns the finishing point after the moves e.g. 2:1:N
 1. The rover wraps around if it reaches the end of the Grid 
-    - Assume the rover current location is (9,9) facing East and the grid size is 10 after the execution it will be directly east from (0,9) 
+    - Assume the rover current location is (9,9) facing East and the grid size is 10 after the execution it will be facing East from (0,9) 
  
 #### EXAMPLE:
 ```
@@ -29,10 +29,10 @@ Test Input:
 LMLMLMLMM
 ```
 
-NOTE: In the above example, 
-- `5 5` is the Grid size
-- `1 2 N` is the initial starting point 
-- `LMLMLMLMM` synchronous commands 
+**NOTE**: In the above example, 
+  - `5 5` is the Grid size
+  - `1 2 N` is the initial starting point 
+  - `LMLMLMLMM` synchronous commands 
 
 
 Expected Output:
@@ -40,7 +40,7 @@ Expected Output:
 1 3 N
 ```
 
-NOTE: Rovers current location is X=1 Y=3 Direction=North
+**NOTE**: Rovers current location is X=1 Y=3 Direction=North
 
 ###### Directions
 
