@@ -4,7 +4,12 @@
 
 Develop an API that moves a rover around a grid
 
-Rules:
+##### Directions: 
+
+       N
+    W  +  E
+       S
+##### Rules:
 
 1. The initial starting point of a rover is (0, 0, N)
     - 0,0 are X, Y coordinates on a grid of (5, 5)
@@ -41,9 +46,3 @@ Expected Output:
 ```
 
 **NOTE**: Rovers current location is X=1 Y=3 Direction=North
-
-#### Directions
-
-       N
-    W  +  E
-       S
