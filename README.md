@@ -42,7 +42,7 @@ Expected Output:
 
 **NOTE**: Rovers current location is X=1 Y=3 Direction=North
 
-###### Directions
+#### Directions
 
        N
     W  +  E
