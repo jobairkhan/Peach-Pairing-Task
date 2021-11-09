@@ -7,19 +7,19 @@ Develop an API that moves a rover around a grid
 Rules:
 
 1. The initial starting point of a rover is (0, 0, N)
-  - 0,0 are X, Y coordinates on a grid of (5, 5)
-    - Grid size is **variable**
-    - 5 is the default size
-  - N is the direction it is facing (i.e. N, E, W, S)
+    - 0,0 are X, Y coordinates on a grid of (5, 5)
+      - Grid size is **variable**
+      - 5 is the default size
+    - N is the direction it is facing (i.e. N, E, W, S)
 2. Command `L` rotate the rover to the Left
 1. Command `R` rotate the rover to Right
 1. Command `M` allows the rover to Move
- - ‘M’ means move forward one grid point, and maintain the same heading.
- - Assume that the square directly North from (x, y) is (x, y+1).
- - Or if the Rover is facing west from (x, y) then M is changing to (x-1, y).
+    - ‘M’ means move forward one grid point, and maintain the same heading.
+      - Assume that the square directly North from (x, y) is (x, y+1).
+      - Or if the Rover is facing west from (x, y) then M is changing to (x-1, y).
 5. The rover receives a string containing the synchronous commands e.g. RMMLM and the rover returns the finishing point after the moves e.g. 2:1:N
 1. The rover wraps around if it reaches the end of the Grid 
-   - Assume the rover current location is (9,9) facing East and the grid size is 10 after the execution it will be directly east from (0,9) 
+    - Assume the rover current location is (9,9) facing East and the grid size is 10 after the execution it will be directly east from (0,9) 
  
 #### EXAMPLE:
 ```
