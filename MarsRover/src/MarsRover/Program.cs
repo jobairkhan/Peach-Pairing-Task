@@ -14,8 +14,9 @@ LMLMLMLMM";
             // This is just a starting point
             var rover = new Rover();
 
-            // rover process ("LMLMLMLMM");
-            var output = rover.CurrentDirection();
+            // rover process or execute commands e.g. ("LMLMLMLMM");
+            // Then check what is the current position
+            var output = rover.Execute("LMLMLMLMM");
 
             // for the above input output will be => "1 3 N"
             Console.WriteLine(output);
@@ -25,9 +26,14 @@ LMLMLMLMM";
 
     public class Rover
     {
-        public string CurrentDirection()
+        /// <summary>
+        /// Process the command and return the final position
+        /// </summary>
+        /// <param name="commands">A list of commands</param>
+        /// <returns>Current Position after executing the commands</returns>
+        public string Execute(string commands)
         {
-            throw new NotImplementedException();
+            return null;
         }
         
     }

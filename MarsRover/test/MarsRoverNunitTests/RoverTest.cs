@@ -11,11 +11,11 @@ namespace MarsRoverNUnitTests
         }
 
         [Test]
-        public void StartHere()
+        public void Initial_position_should_be_0_0_N()
         {
             var sut = new Rover();
 
-            var result = sut.CurrentDirection();
+            var result = sut.Execute("");
 
             Assert.That(result, Is.EqualTo("0 0 N"));
         }
@@ -23,9 +23,14 @@ namespace MarsRoverNUnitTests
     
     public class Rover
     {
-        public string CurrentDirection()
+        /// <summary>
+        /// Process the command and return the final position
+        /// </summary>
+        /// <param name="commands">A list of commands</param>
+        /// <returns>Current Position after executing the commands</returns>
+        public string Execute(string commands)
         {
-            throw new NotImplementedException();
+            return null;
         }
         
     }
