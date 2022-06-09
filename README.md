@@ -12,7 +12,7 @@ Develop an API that moves a rover around a grid
 
 ##### Rules:
 
-1. The initial starting point of a rover is (0, 0, N)
+1. We should be able to pass the starting point of the Rover and the rectangular grid size. The first 2 lines on the input are used to setup the starting point. If nothing have been passed then the initial starting point of a rover is (0, 0, N)
     - 0,0 are X, Y coordinates on a grid of (5, 5)
       - Grid size is **variable**
       - 5 is the default size
@@ -20,7 +20,7 @@ Develop an API that moves a rover around a grid
 2. Command `L` rotate the rover to the Left
 1. Command `R` rotate the rover to Right
 1. Command `M` allows the rover to Move
-    - ‘M’ means move forward one grid point, and maintain the same heading.
+    - â€˜Mâ€™ means move forward one grid point, and maintain the same heading.
       - Assume that the square directly North from (x, y) is (x, y+1).
       - Or if the Rover is facing west from (x, y) then M is changing to (x-1, y).
 5. The rover receives a string containing the synchronous commands e.g. RMMLM and the rover returns the finishing point after the moves e.g. 2:1:N
