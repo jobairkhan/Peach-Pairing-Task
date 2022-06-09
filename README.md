@@ -12,7 +12,7 @@ Develop an API that moves a rover around a grid
 
 ##### Rules:
 
-1. We should be able to pass the starting point of the Rover and the rectangular grid size. The first 2 lines on the input are used to setup the starting point. If nothing have been passed then the initial starting point of a rover is (0, 0, N)
+1. We should be able to pass the starting point of the Rover and the rectangular grid sizes. The first 2 lines on the input are used to setup the starting point. If nothing have been passed then the initial starting point of a rover is (0, 0, N)
     - 0,0 are X, Y coordinates on a grid of (5, 5)
       - Grid size is **variable**
       - 5 is the default size
