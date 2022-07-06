@@ -7,12 +7,13 @@ namespace MarsRover
         public static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-
+/*
             var exampleInput = @"5 5
 1 2 N
 LMLMLMLMM";
+*/
             // This is just a starting point
-            var rover = new Rover();
+            var rover = new Rover(1, 2, "N");
 
             // rover process or execute commands e.g. ("LMLMLMLMM");
             // Then check what is the current position
